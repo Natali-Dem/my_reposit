@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">;
+</head>
+<body>
+
+<script>
+
+    function addText(tag,txt){
+
+        var str=document.getElementById(txt).value+'<br />';
+        document.getElementById(tag).innerHTML=str;
+    }
+
+
+
+</script>
+<table border="2">
+    <tr>
+        <td><h2>Ф.И.О.</h2></td>
+        <td><h2>Геометрия</h2></td>
+        <td><h2>Физика</h2></td>
+        <td><h2>Алгебра</h2></td>
+        <td><h2>География</h2></td>
+        <td><h2>Биология</h2></td>
+    </tr>
+    <tr>
+        <td id="name"></td>
+        <td id="ozG"></td>
+        <td id="ozF"></td>
+        <td id="ozA"></td>
+        <td id="ozQ"></td>
+        <td id="ozB"></td>
+    </tr>
+    <tr>
+        <td id="name"></td>
+        <td id="ozG"></td>
+        <td id="ozF"></td>
+        <td id="ozA"></td>
+        <td id="ozQ"></td>
+        <td id="ozB"></td>
+    </tr>
+    <tr>
+        <td id="name"></td>
+        <td id="ozG"></td>
+        <td id="ozF"></td>
+        <td id="ozA"></td>
+        <td id="ozQ"></td>
+        <td id="ozB"></td>
+    </tr>
+    <tr>
+        <td id="one"></td>
+        <td></td>
+        <td id="second"></td>
+        <td id="one"></td>
+        <td></td>
+        <td id="three"></td>
+    </tr>
+    <tr>
+        <td id="three"></td>
+        <td id="one"></td>
+        <td id="three"></td>
+        <td id="second"></td>
+        <td></td>
+        <td id="one"></td>
+    </tr>
+    <tr>
+        <td id="three">
+           <input id="text" type="text" value=" " />
+            <input type="button"  onclick="addText('name','text')"
+                   value="Добавить" />
+
+        </td>
+        <td>
+            <input id="text1" type="text" value=" " />
+            <input type="button"  onclick="addText('ozG','text1')"
+                   value="Добавить" />
+
+        </td>
+        <td id="str">
+            <input id="text2" type="text" value=" " />
+            <input type="button"  onclick="addText('ozF','text2')"
+                   value="Добавить" />
+
+        </td>
+        <td id="str">
+           <input id="text3" type="text" value=" " />
+            <input type="button"  onclick="addText('ozA','text3')"
+                   value="Добавить" />
+
+        </td>
+        <td id="str">
+            <input id="text4" type="text" value=" " />
+            <input type="button"  onclick="addText('ozQ','text4')"
+                   value="Добавить" />
+
+        </td>
+        <td id="str">
+           <input id="text5" type="text" value=" " />
+            <input type="button"  onclick="addText('ozB','text5')"
+                   value="Добавить" />
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

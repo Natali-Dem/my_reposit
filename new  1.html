@@ -1,0 +1,35 @@
+<html>
+ <head>
+     <meta charset="UTF-8">
+        <title>javascript ���������</title>
+
+ <script>
+	 var obr = prompt('Введите слово которое нужно закодировать!');
+	 var kod = obr.split('');
+    var newkod = kod.reverse();
+
+     var newkod2 = newkod.join('');
+     alert( newkod2 );
+    
+     function Victory(){
+        return alert('Ура вы угадали!!!');
+         
+    }
+        var a = prompt('Попытка №1! Прочитайте внимательней, слово состоит из тех же букв!');
+         if( a == obr )  Victory();
+     else
+        var b = prompt('Попытка №2! Прочитайте справо налево!');
+          if( b == obr )  Victory();
+     else
+         alert('Это слово' + " " +  obr);
+ </script>
+ </head>
+	<body>
+
+	</body>
+</html>
+
+
+
+
+
